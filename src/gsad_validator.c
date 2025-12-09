@@ -337,6 +337,8 @@ init_validator ()
   gvm_validator_add (validator, "setting_value", "^.*$");
   gvm_validator_add (validator, "setting_name", "^.*$");
   gvm_validator_add (validator, "comment", "^[[:graph:][:space:]]*$");
+  gvm_validator_add (validator, "config_id", "^[a-z0-9\\-]+$");
+  gvm_validator_add (validator, "familyTrend", "^[0-9]+$");
   gvm_validator_add (validator, "condition", "^[[:alnum:] ]*$");
   gvm_validator_add (validator, "create_credentials_type", "^(gen|pass|key)$");
   gvm_validator_add (validator, "credential_type",
@@ -345,6 +347,7 @@ init_validator ()
   gvm_validator_add (validator, "vault_id", "^.*$");
   gvm_validator_add (validator, "host_identifier", "^.*$");
   gvm_validator_add (validator, "privacy_host_identifier", "^.*$");
+
   gvm_validator_add (validator, "preferences:app_id", "^.*$");
   gvm_validator_add (validator, "preferences:passphrase", "^.*$");
   gvm_validator_add (validator, "credential_login", "^[-_[:alnum:]\\.@\\\\]*$");
