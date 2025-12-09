@@ -8,3 +8,4 @@ build/
 .directory
 coverage/
 /gsa/storybook-static/
+node_modules/
